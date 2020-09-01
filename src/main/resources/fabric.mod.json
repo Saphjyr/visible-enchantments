@@ -1,0 +1,38 @@
+{
+    "schemaVersion": 1,
+    "id": "venchants",
+    "version": "${version}",
+  
+    "name": "Visual Enchantments",
+    "description": "Renders indicators on top of items depending on their enchantments",
+    "authors": [
+      "Saphjyr"
+    ],
+    "contact": {
+      "homepage": "https://fabricmc.net/",
+      "sources": "https://github.com/Saphjyr/visible-enchantments"
+    },
+  
+    "license": "CC0-1.0",
+    "icon": "assets/venchants/icon/icon.png",
+  
+    "environment": "client",
+    "entrypoints": {
+      "main": [
+        "net.fabricmc.venchants.venchantsMod"
+      ]
+    },
+    "mixins": [
+      "venchants.mixins.json"
+    ],
+  
+    "depends": {
+      "fabricloader": ">=0.7.4",
+      "fabric": "*",
+      "minecraft": "1.16.x"
+    },
+    "suggests": {
+      "flamingo": "*"
+    }
+  }
+  
